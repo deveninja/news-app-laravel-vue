@@ -1,0 +1,27 @@
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.shadow-lg {
+  box-shadow: .35rem 0.2rem .1rem rgba(0, 0, 0, 0.3) !important;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+
+.shadow-lg:hover {
+  box-shadow: .05rem .05rem .1rem rgba(0, 0, 0, 0.6) !important;
+}
+
+.card {
+  -webkit-transition: all .3s ease-in; /* For Safari 3.1 to 6.0 */
+  transition: all .3s ease-in;
+}
+
+.card:hover {
+  transform: scale(.99,.988);
+  cursor: pointer;
+}
