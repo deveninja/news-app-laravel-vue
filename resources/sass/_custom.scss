@@ -25,3 +25,17 @@ h1, h2, h3, h4, h5, h6, p {
   transform: scale(.99,.988);
   cursor: pointer;
 }
+
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 0 0.4rem;
+  margin-bottom: 2rem;
+  grid-auto-rows: 5px;
+}
+
+.card-grid .carding {
+  width: 100%;
+  height: auto;
+}

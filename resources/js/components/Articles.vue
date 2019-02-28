@@ -33,28 +33,29 @@
       </nav>
       <div class="card-deck">
          
-         <div v-for="article in articles" v-bind:key="article.source.url" class="card text-white bg-dark mb-4 shadow-lg" style="min-width: 300px;">
+         <div v-for="article in articles" v-bind:key="article.source.url" class="card text-white bg-dark mb-4 shadow-lg" style="min-width: 240px;">
             <img v-bind:src="article.urlToImage" class="card-img-top" />
          
          
-            <div class="card-header">
-               <h2 class="card-title">{{ article.title }}</h2>
+            <div class="card-header mb-5">
+               <h4 class="card-title">{{ article.title }}</h4>
                <!-- <p class="card-text text-muted">{{ article.description }}</p> -->
                <small class="text-muted">
                   {{ article.author }}
                </small>
-            </div>
-         
-            <div class="card-body">
-               <p class="card-text">{{ article.content }}</p>
-            </div>
-            <div class="card-footer">
                <p class="card-text">
                   <small class="text-muted">
                      Published at {{ new Date(article.publishedAt).toLocaleString() }}
                   </small>
                </p>
             </div>
+         
+            <!-- <div class="card-body">
+               <p class="card-text">{{ article.content }}</p>
+            </div> -->
+            <!-- <div class="card-footer" style="position:absolute; bottom:0; left:0; right:0;">
+               
+            </div> -->
          </div>
               
       </div>
@@ -119,7 +120,7 @@ export default {
       },
 
       renderPrev() {
-          this.pagination.pageCurrent = this.pagination.pageCurrent - 1
+         this.pagination.pageCurrent = this.pagination.pageCurrent - 1
          this.fetchArticles('business', 'ph', this.pagination.pageCurrent)
          // console.log('prev')
       },      

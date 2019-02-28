@@ -1828,6 +1828,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -37042,7 +37043,7 @@ var render = function() {
             {
               key: article.source.url,
               staticClass: "card text-white bg-dark mb-4 shadow-lg",
-              staticStyle: { "min-width": "300px" }
+              staticStyle: { "min-width": "240px" }
             },
             [
               _c("img", {
@@ -37050,8 +37051,8 @@ var render = function() {
                 attrs: { src: article.urlToImage }
               }),
               _vm._v(" "),
-              _c("div", { staticClass: "card-header" }, [
-                _c("h2", { staticClass: "card-title" }, [
+              _c("div", { staticClass: "card-header mb-5" }, [
+                _c("h4", { staticClass: "card-title" }, [
                   _vm._v(_vm._s(article.title))
                 ]),
                 _vm._v(" "),
@@ -37061,16 +37062,8 @@ var render = function() {
                       _vm._s(article.author) +
                       "\n            "
                   )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-body" }, [
-                _c("p", { staticClass: "card-text" }, [
-                  _vm._v(_vm._s(article.content))
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-footer" }, [
+                ]),
+                _vm._v(" "),
                 _c("p", { staticClass: "card-text" }, [
                   _c("small", { staticClass: "text-muted" }, [
                     _vm._v(
